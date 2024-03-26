@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+/* font-family: 'Poppins', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Preto: #121212;
+    --Cinza: #222222;
+    --Ciano: #00C2E4;
+    --Azul: #1296E2;
+    --Branco: #F2F2F2;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+ 
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: rgb(2,0,36);
+    background: linear-gradient(-45deg, #020024 0%, #001381 100%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    animation: animateBackground 1s linear infinite;
+} 
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
+
+.form{
+    color:white;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 450px;
+    max-width: 80vw;
+    min-height: 450px;
+    padding: 20px;
+    background-color: #12121240;
+    filter: drop-shadow(0px 0px 4px black);
+    border-radius: 15px;
+    gap: 10px;
+}
+
+label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input,textarea{
+    padding: 10px 5px;
+    outline: 1px solid transparent;
+    border: 2px solid transparent;
+    height: 1.8rem;
+    width: 80%;
+    transition: .3s;
+    color: black;
+    font-family: 'Poppins';
+}
+
+textarea{
+    min-height: 100px;
+    resize: vertical;
+}
+
+input:hover,textarea:hover,
+input:hover,textarea:focus{
+    border-radius: 10px;
+    border-color: #3457D5;
+    outline-color: #3457D5;
+}
+
+.btnSubmit,.btnHome{
+    width: 140px;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: #3457D5;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    transition: .5s ease;
+    font-weight: bold;
+}
+
+.btnSubmit:hover,.btnHome:hover{
+    background-color: #001381;
+}
+
+@keyframes animateBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }       
+}
+
+.bi-envelope-at-fill{
+    margin-right: 10px;
+}
+
+p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#time{
+    font-weight: bold;
+    color: var(--Ciano);
+}
+
+@media screen and (max-width:550px){
+    main{
+        padding: 0px 10px;
+    }
+    
+    main h1{
+        font-size: 28px;
+    }
+
+    main p{
+        font-size: 1rem;
+    }
+}

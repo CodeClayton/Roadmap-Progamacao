@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back End Roadmap</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/back-end.css">
+    <link rel="stylesheet" href="../style/global.css">
+    <script src="../JS/global.js" type="text/JavaScript" defer></script>
+</head>
+<body>
+    <header>
+        <a href="../../index.html"><img id="logo" src="../img/logo.png" alt="Roadmap | CH"></a>
+        <nav class="navMenu">
+            <div class="menu">
+                <a href="../../index.html" class="nav-item">HOME</a>
+                <a href="#definition-php" class="nav-item php"><span class="php">PHP</span></a>
+                <a href="#definition-python" class="nav-item python"><span class="python">Python</span></a>
+            </div>
+        </nav>
+        <div class="hamburguerMenu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="menu-mobile">
+            <a href="../../index.html" class="nav-item">HOME</a>
+                <a href="#definition-php" class="nav-item php"><span class="php">PHP</span></a>
+                <a href="#definition-python" class="nav-item python"><span class="python">Python</span></a>
+        </nav>
+    </header>
+    <span id="back-to-top"></span>
+    <main>
+        <h1>Back-End:</h1>
+        <section id="definition-php">
+            <span class="php">
+                <h2>PHP:</h2>
+            </span>
+            <div class="concept">
+                <p><span class="php">PHP</span> é uma linguagem de programação interpretada, de propósito geral, que pode ser usada para gerar conteúdo dinâmico em páginas da web. É uma linguagem de script do lado do servidor, o que significa que é executada no servidor web e o resultado é enviado para o navegador do usuário.
+                O <span class="php">PHP</span> é responsável por gerar o conteúdo da página da web, como texto, imagens, vídeos e formulários. Também é responsável por processar dados do usuário, como formulários de login e pedidos de compra.</p>
+            </div>
+            <section class="basic-concept">
+                <h3>Conceitos básicos</h3>
+                <ul>
+                    <li>Aprenda os fundamentos de como criar sites usando <span class="php">PHP</span>.</li>
+                    
+                    <li>Saiba como usar variáveis <span class="php">PHP</span> para armazenar dados.</li>
+
+                    <li>Entenda os diferentes tipos de funções <span class="php">PHP</span> e como elas são usadas.</li>
+                </ul>
+            </section>
+        </section>
+        <section class="examples-structure">
+            <p class="example">Exemplos de código:</p>
+            <div class="container-structure">
+                <div class="title-structure">
+                    <h3><span class="php">PHP</span></h3>
+                </div>
+                <div class="box-structure">
+                    <div class="text-box">
+                        <span class="coment">// Cria um script PHP simples</span>
+                        
+                        <span class="code-lang">&lt;?php</span>
+                        
+                        <span class="coment">// Exibe uma mensagem na tela</span>
+                        
+                        <div class="code">
+                            <span class="code-lang">echo</span>(
+                            <span class="text-structure"> "Olá, mundo!"</span>);
+                        </div>
+                        
+                        <span class="coment">// Define uma variável</span>
+                    
+                        <div class="code">
+                            <span class="var">$nome</span> =
+                            <span class="text-structure">"Joâo"</span>;
+                        </div>
+                        
+                        <span class="coment">// Exibe o valor da variável</span>
+                        
+                        <div class="code">
+                            <span class="code-lang">echo</span>
+                            <span class="var">$nome</span>;
+                        </div>
+                        
+                        <span class="coment">// Define uma função</span>
+
+                        <div class="code">
+                            <span class="function">function</span>
+                            <span                            class="function-name">exibirMensagem</span>(){<br>
+                            
+                            <span class="code-php">echo</span>(
+                            <span class="text-structure">"Olá, mundo!"</span>); <br>
+                                }
+                        </div>
+
+                        <span class="coment">// Chama a função</span>
+                        
+                        <div class="code"><span class="function-name">exibirMensagem</span>();</div>
+                        <div class="code">
+                            <span class="code-lang">?&gt;</span>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </section>  
+        <section class="tags-php">
+            <h3>Tags <span class="php">PHP:</span></h3>
+            <ul class="tags-php-title">
+                <li>
+                    <p class="sub-ul">Variáveis <span class="php">PHP:</span></p>
+                    <ul class="ul-sub-tags">
+                        <li><span class="tag-el">int:</span>Define uma variável inteira.</li>
+                        <li><span class="tag-el">float:</span>Define uma variável de ponto flutuante.</li>
+                        <li><span class="tag-el">string:</span>Define uma variável de string.</li>
+                        <li><span class="tag-el">bool:</span>Define uma variável booleana.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p  class="sub-ul">Funções <span class="php">PHP:</span></p>
+                    <ul class="ul-sub-tags">
+                        <li><span class="tag-el">echo:</span>Exibe um valor na tela.</li>
+                        <li><span class="tag-el">print:</span>Exibe um valor na tela.</li>
+                        <li><span class="tag-el">var_dump:</span>Exibe informações sobre uma variável.</li>
+                        <li><span class="tag-el">isset():</span>Verificar se uma variável existe.</li>
+                        <li><span class="tag-el">empty():</span>Verifica se uma variável está vazia.</li>
+                        <li><span class="tag-el">sizeof():</span>Retorna o tamanho de uma variável.</li>
+                        <li><span class="tag-el">str_replace():</span>Substitui uma string por outra.</li>
+                        <li><span class="tag-el">str_split():</span>Divide uma string em uma matriz.</li>
+                        <li><span class="tag-el">str_shuffle():</span>Embaralha uma string.</li>
+                        <li><span class="tag-el">str_repeat():</span>Repete uma string um número de vezes.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="sub-ul">Módulos <span class="php">PHP:</span></p>
+                    <ul class="ul-sub-tags">
+                        <li>Módulos <span class="php">PHP</span> são extensões que adicionam novos recursos ao PHP.</li>
+                        <li>Módulos <span class="php">PHP</span> podem ser usados para acessar bancos de dados, trabalhar com arquivos e muito mais.</li>
+                        <li>Exemplo: O módulo mysqli permite que você acesse bancos de dados MySQL.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="sub-ul">Banco de Dados:</p>
+                    <ul class="ul-sub-tags">
+                        <li>Um banco de dados é uma coleção de dados estruturados.</li>
+                        <li><span class="php">PHP</span> pode ser usado para acessar bancos de dados MySQL, PostgreSQL, SQLite e outros.</li>
+                        <li>Exemplo: Você pode usar <span class="php">PHP</span> para criar um site que permita aos usuários se cadastrar e fazer login.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="sub-ul">APIs:</p>
+                    <ul class="ul-sub-tags">
+                        <li>Uma API é uma interface de programação de aplicativos.</li>
+                        <li>APIs permitem que você interaja com outros serviços e aplicativos.</li>
+                        <li>Exemplo: Você pode usar <span class="php">PHP</span> para criar uma API que fornece informações sobre o clima.</li>
+                    </ul>    
+                </li>
+                <li><p class="ul-sub-title">Recursos:</p>
+                    <ul>
+                        <li class="list-resources"><a href="https://www.w3schools.com/php/" target="_blank" class="link-resources">W3Schools: PHP Tutorial</a></li>
+
+                        <li class="list-resources"><a href="https://www.php.net/docs.php" target="_blank" class="link-resources">PHP.net:PHP Documentation</a></li>
+
+                        <li class="list-resources"><a href="https://www.jetbrains.com/phpstorm/" target="_blank" class="link-resources">PHP IDE PHPStorm</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="definition-python">
+            <span class="python">
+                <h2>PYTHON:</h2>
+            </span>
+            <div class="concept">
+                <p><span class="python">Python</span> é uma linguagem de programação que pode ser usada para criar uma ampla gama de aplicações. É uma linguagem de propósito geral, o que significa que pode ser usada para uma variedade de tarefas, incluindo desenvolvimento web, ciência de dados, inteligência artificial, automação e desenvolvimento de jogos.</p>
+            </div>
+            <section class="basic-concept">
+                <h3>Conceitos básicos</h3>
+                <ul>
+                    <li>Aprenda os fundamentos de como programar em <span class="python">Python</span>.</li>
+                    <li>Saiba como usar variáveis Python para armazenar dados.</li>
+                    <li>Entenda os diferentes tipos de funções <span class="python">Python</span> e como elas são usadas.</li>
+                </ul>
+            </section>
+        </section>
+        <section class="examples-structure">
+            <p class="example">Exemplos de código:</p>
+            <div class="container-structure">
+                <div class="title-structure">
+                    <h3><span class="python">PYTHON</span></h3>
+                </div>
+                <div class="box-structure">
+                    <div class="text-box">
+                        <span class="coment">// Cria um script Python simples</span>
+                        
+                        <div class="code">
+                            <span class="code-lang">print</span>(<span class="text-structure">'Olá,mundo</span>)
+                        </div>
+                        
+                        
+                        <span class="coment">// Define uma variável</span>
+                    
+                        <div class="code">
+                            <span class="var">nome</span> =
+                            <span class="text-structure">"Joâo"</span>;
+                        </div>
+                        
+                        <span class="coment">// Exibe o valor da variável</span>
+                        
+                        <div class="code">
+                            <span class="code-lang">print</span>(
+                            <span class="var">nome</span>); 
+                        </div>
+                        
+                        <span class="coment">// Define uma função</span>
+
+                        <div class="code">
+                            <span class="code-lang">def</span>
+                            <span                            class="function-name">exibirMensagem</span>(): <br>
+                            <span class="code-lang">print</span>(<span class="text-structure">'Olá,mundo</span>)
+                                
+                        </div>
+
+                        <span class="coment">// Chama a função</span>
+                        
+                        <div class="code"><span class="function-name">exibirMensagem</span>();</div>
+                    </div>
+                </div> 
+            </div>
+        </section>  
+        <section class="tags-python">
+            <h3>Tags <span class="python">PYTHON:</span></h3>
+            <ul class="tags-python-title">
+                <li>
+                    <p class="sub-ul">Variáveis <span class="python">PYTHON:</span></p>
+                    <ul class="ul-sub-tags">
+                        <li><span class="tag-el">int:</span> Define uma variável inteira.</li>
+                        <li><span class="tag-el">float:</span> Define uma variável de ponto flutuante.</li>
+                        <li><span class="tag-el">string:</span> Define uma variável de string.</li>
+                        <li><span class="tag-el">bool:</span> Define uma variável booleana.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p  class="sub-ul">Funções <span class="python">PYTHON:</span></p>
+                    <ul class="ul-sub-tags">
+                        <li><span class="tag-el">print():</span> Exibe um valor na tela.</li>
+                        <li><span class="tag-el">input():</span> Solicita ao usuário uma entrada.</li>
+                        <li><span class="tag-el">type():</span> Retorna o tipo de uma variável.</li>
+                        <li><span class="tag-el">len():</span> Retorna o tamanho de uma variável.</li>
+                        <li><span class="tag-el">range():</span> Gera uma sequência de números.</li>
+                        <li><span class="tag-el">list():</span> Cria uma lista.</li>
+                        <li><span class="tag-el">tuple():</span> Cria uma tupla.</li>
+                        <li><span class="tag-el">dict():</span> Cria um dicionário.</li>
+                        <li><span class="tag-el">set():</span> Cria um conjunto.</li>
+                    </ul>
+                </li>
+                <h3>Conceitos Adicionais:</span></h3>
+                <li>
+                    <p class="sub-ul">Bibliotecas <span class="python">Python:</span></p>
+                        <ul class="ul-sub-tags">
+                            <li>Bibliotecas <span class="python">Python</span> são módulos que fornecem novos recursos à linguagem.</li>
+                            <li>Bibliotecas Python podem ser usadas para acessar bancos de dados, trabalhar com arquivos, criar interfaces gráficas e muito mais.</li>
+                            <li>Exemplo: A biblioteca pandas pode ser usada para trabalhar com dados em tabelas.</li>
+                        </ul>
+                </li>
+                <li>
+                    <p class="sub-ul">Banco de Dados:</p>
+                    <ul class="ul-sub-tags">
+                        <li>Um banco de dados é uma coleção de dados estruturados.</li>
+                        <li><span class="python">Python</span> pode ser usado para acessar bancos de dados MySQL, PostgreSQL, SQLite e outros.</li>
+                        <li>Exemplo: Você pode usar <span class="python">Python</span> para criar um site que permita aos usuários se cadastrar e fazer login.</li>
+                    </ul>
+                </li>
+                <li>
+                    <p class="sub-ul">APIs:</p>
+                    <ul class="ul-sub-tags">
+                        <li>Uma API é uma interface de programação de aplicativos.</li>
+                        <li>APIs permitem que você interaja com outros serviços e aplicativos.</li>
+                        <li>Exemplo: Você pode usar <span class="python">Python</span> para criar uma API que fornece informações sobre o clima.</li>
+                    </ul>    
+                </li>
+                <li><p class="ul-sub-title">Recursos:</p>
+                    <ul>
+                        <li class="list-resources"><a href=" https://docs.python.org/3/tutorial/index.html" target="_blank" class="link-resources">Python Tutorial:</a></li>
+
+                        <li class="list-resources"><a href="https://docs.python.org/3/" target="_blank" class="link-resources">Python Documentation:</a></li>
+
+                        <li class="list-resources"><a href=" https://pypi.org/" target="_blank" class="link-resources">Python Package Index:</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por<a href="https://github.com/CodeClayton" target="_blank"  id="my-github"> CodeClayton <i class="bi bi-github"></i></a></p>
+        <p class="rights"> Todos os Direitos Reservados&copy;.</p>
+        <a class="arrow-top" href="#back-to-top"><i class="bi bi-arrow-up-circle-fill"></i></a>
+    </footer>
+</body>
+</html>

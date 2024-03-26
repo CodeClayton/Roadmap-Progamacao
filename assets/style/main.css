@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+/* font-family: 'Poppins', sans-serif;*/
+
+:root{
+    --Preto: #121212;
+    --Cinza: #222222;
+    --Ciano: #00C2E4;
+    --Azul: #1296E2;
+    --Branco: #F2F2F2;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Cinza);
+    color: var(--Branco);
+}
+
+main{
+    margin-top: 80px;
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 18px;
+    margin-top: 15px;
+}
+
+.video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iframe{
+    width: 720px;
+    height: 320px;
+}
+
+.curiosity{
+    text-align: center;
+}
+
+.curiosity p{
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.curiosity p strong{
+    color: var(--Ciano);
+    font-weight: normal;
+}
+
+span a {
+    color: var(--Ciano);
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+}
+
+span a:hover{
+    color: #1296E2;
+}
+
+#prog-areas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.carrer{
+    width: 450px;
+    margin: 60px; 
+    box-shadow:  0px 0px 8px 2px #00c2e471;
+    border-radius: 18px;
+    padding: 15px;
+    background-color: var(--Preto);
+}
+
+.cont-list{
+    padding: 10px 20px;
+    text-align: justify;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+.sub-title{
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.sub-title a{
+    text-decoration: none;
+    color: var(--Azul);
+}
+
+.html{
+    color: #EC6231 ;
+}
+
+.css{
+    color: #2965F1;
+}
+
+.js{
+    color: #F0DB4F;
+}
+
+.php{
+    color: #484C89;
+}
+
+.python{
+    color: #FFD43B;
+}
+
+.sugestions{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--Preto);
+    width: 90vw;
+    border-radius: 12px;
+    margin: 20px auto;
+    box-shadow:  0px 0px 8px 2px #00c2e471;
+}
+
+.sugestions h2{
+    font-size: 2.6rem;
+    margin-bottom: 30px;
+}
+
+.subtitle-extension{
+    font-size: 1.3rem;
+    margin: 20px 0;
+}
+
+.sugest-extension{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.sugest{
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.extension{
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.preview-extension{
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+}
+
+.link-extension{
+    text-decoration: none;
+    color: var(--Ciano);
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.link-extension:hover{
+    color: var(--Azul);
+}
+
+.vs-code-link{
+    display: flex;
+    justify-content: center;
+}
+
+.vscode-img{
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin: 20px 0;
+}
+
+
+.tag-extension{
+    color: var(--Ciano);
+}
+
+footer{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
+    height: 60px;
+    background-color: var(--Preto);
+    align-items: center;
+    justify-content: space-around;
+    color: var(--Branco);
+}
+
+#logo-footer{
+    cursor: pointer;
+    position: relative;
+}
+
+#my-github{
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--Ciano);
+}
+
+@media screen and (max-width:920px) {
+    iframe{
+        height: 250px;
+    }
+    #prog-areas{
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .carrer{
+       width: 80%; 
+    }
+
+    #box-FrontEnd,#box-BackEnd{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .video {
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        width: 90vw;
+        height: auto;
+        padding-top: 56.25%; /* faz ficar com 16:9 (9/16= 0.5625) */
+    }
+      
+    .iframe {
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 90%;
+    }
+    
+}
+
+@media screen and (max-width: 650px){
+    h1{
+        font-size: 28px;
+    }
+    .curiosity p{
+        font-size: 18px;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 468px) {
+    .rights{
+        display: none;
+    }
+}
